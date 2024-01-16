@@ -54,14 +54,12 @@ que = st.text_input("Enter Your SQL Query:", key="sql_query")
 submit = st.button("Get Answer", key="submit_button", help="Click to retrieve the SQL data")
 
 if submit or que:
-    try:
-        response = get_response(que, prompt)   
-        print(response) 
-        response=read_query(response,"data.db")
-        st.subheader("The Response is:")
-        st.table(response)
-    except:
-        st.subheader("Enter Valid Text")
+    response = get_response(que, prompt)   
+    print(response) 
+    response=read_query(response,"data.db")
+    st.subheader("The Response is:")
+    st.table(response)
+    st.subheader("Enter Valid Text")
 
 st.markdown("""
 ---
