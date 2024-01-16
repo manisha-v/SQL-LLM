@@ -6,7 +6,7 @@ import google.generativeai as genai
 
 load_dotenv()
 
-genai.configure(api_key = st.secrets("API_KEY"))
+genai.configure(api_key = st.secrets["API_KEY"])
 
 prompt=[
     """
