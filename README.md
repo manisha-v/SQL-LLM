@@ -6,7 +6,7 @@ SQL LLM is a Streamlit application that utilizes Google Gemini's language model 
 
 ## Table Structure
 
-The app uses a predefined table stored in the "data.db" file with the following structure:
+The app uses a predefined table "students" stored in the "data.db" file with the following structure:
 
 | Name     | Class   | Marks | Company   |
 |----------|---------|-------|-----------|
@@ -18,6 +18,17 @@ The app uses a predefined table stored in the "data.db" file with the following 
 
 ---
 
+## How It Works
+
+1. **Input Query:** Users enter natural language questions, e.g., "Sort the students."
+2. **Google Gemini Translation:** The app utilizes Google Gemini's language model to translate the query into a SQL command.
+3. **SQL Query Execution:** The translated SQL query is executed on the pre-built table stored in "sql.py."
+4. **Result Presentation:** The app dynamically displays the query results, providing an interactive demonstration of natural language to SQL conversion.
+
+**Note:** If the input does not result in a valid SQL query, the app responds with "Enter valid input" to guide users towards proper query formulation.
+
+---
+
 ## How to Run
 
 1. Clone the repository:
@@ -25,20 +36,25 @@ The app uses a predefined table stored in the "data.db" file with the following 
    git clone https://github.com/manisha-v/SQL-LLM.git
    cd SQL-LLM
    ```
+   
+2. Install the dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+3. Generate a Google Gemini API key and save it as `API_KEY` in your `secrets.toml` file.
 
-2. Generate a Google Gemini API key and save it as `API_KEY` in your `secrets.toml` file.
-
-3. If you want to use a different table or data then make chnages in "sql.py" accordingly and run it:
+4. If you want to use a different table or data then make changes in "sql.py" accordingly and run it:
    ```bash
    python sql.py
    ```
 
-4. Run the "app.py" script:
+5. Run the "app.py" script:
    ```bash
    streamlit run app.py
    ```
 
-5. Enjoy exploring natural language to SQL conversion and real-time query results!
+6. Enjoy exploring natural language to SQL conversion and real-time query results!
 
 ---
 
@@ -51,7 +67,7 @@ The app uses a predefined table stored in the "data.db" file with the following 
 
 ## Deployment
 
-The portfolio website has been deployed and is accessible through the following link: https://sql-llm.streamlit.app/
+The app has been deployed and is accessible through the following link: https://sql-llm.streamlit.app/
 
 ---
 
