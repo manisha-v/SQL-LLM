@@ -6,7 +6,7 @@ import google.generativeai as genai
 
 load_dotenv()
 
-genai.configure(api_key = os.getenv('API_KEY'))
+genai.configure(api_key = st.secrets("API_KEY"))
 
 prompt=[
     """
@@ -17,7 +17,7 @@ prompt=[
     \nExample 2 - Tell me all the students studying in MCA class?, 
     the SQL command will be something like this SELECT * FROM STUDENT 
     where CLASS="MCA"; 
-    also the sql code should not have ``` in beginning or end and sql word in output
+    also the sql code should not have ``` in the beginning or end and SQL word in output
     """
 ]
 
