@@ -44,8 +44,8 @@ The app uses a predefined table stored in the "data.db" file with the following 
 
 ## Preview
 
-| ![Preview Image 1](preview1.png) | ![Preview Image 2](preview2.png) |
-|----------------------------------|----------------------------------|
+| ![Preview Image 1](images/img1.png) | ![Preview Image 2](images/img2.png) | ![Preview Image 3](images/img3.png) |
+|---------|-------------|-----------|
 
 ---
 
