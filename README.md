@@ -1,6 +1,7 @@
 # SQL-LLM 
+# QueryCraft
 
-SQL LLM is a Streamlit application that utilizes Google Gemini's language model to convert natural language queries into SQL commands. This project is built using Python, Streamlit, and the Google Gemini API. The SQL LLM app can be accessed [here](https://sql-llm.streamlit.app/)
+QueryCraft is a Streamlit application that utilizes Google Gemini's language model to convert natural language queries into SQL commands. This project is built using Python, Streamlit, and the Google Gemini API. The QueryCraft app can be accessed [here](https://sql-llm.streamlit.app/)
 
 ---
 
